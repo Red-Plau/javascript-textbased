@@ -1,0 +1,21 @@
+console.log("PROJECT WILL BE UPDATED WITH INPUT FUNCTION IN THE FUTURE.\nFor now, please feel free to edit the code yourself to find the values desired.\nThe program begins with 0°K.\n\n");
+
+//The forecast today is 0 Kelvin. This temperature will remain constant.
+const kelvin = 0;
+//Celsius is 273 degrees less than Kelvin, so the conversion rate from °K to °C is: [Temp in Kelvin] - 273 = [Temp in Celsius].
+const celsius = kelvin - 273;
+
+console.log(`The temperature is ${celsius} degrees Celsius.\n`);
+
+//Fahrenheit = Celsius * (9/5) + 32. We're rounding this off to the smallest integer, explained ahead.
+let farenheit = celsius * (9/5) + 32;
+//When we convert from °C to °F, we tend to have a float. We want a better, rounded number, so we'll round down our farenheit var.
+farenheit = Math.floor(farenheit);
+
+console.log(`The temperature is ${farenheit} degrees Farenheit.\n`);
+
+//Now, let's convert °C to °N. Since we'll be rounding down again, this will have to be a "let" variable rather than a constant.
+let newton = celsius * (33/100);
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees Newton.\n`);

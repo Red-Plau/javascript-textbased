@@ -1,0 +1,16 @@
+console.log("Go ahead and edit the values to see your age in dog years!\n\n");
+
+//Set your age here!
+const myAge = 20;
+//The "early years" or rather, two first years, of a dog can be multiplied by 10.5 to see how old they'd be in human years.
+let earlyYears = 2 * 10.5;
+//We've already worked out the first two years, so we'll take that off what's left of it.
+let laterYears = myAge - 2;
+//Then, we're multiplying our leftover years by four to get the last of the years calculated.
+laterYears *= 4;
+//Adding both ages together...
+const myAgeInDogYears = earlyYears + laterYears;
+//Storing my name completely lowercase...
+const myName = "RedPlau".toLowerCase();
+
+console.log(`My name is ${myName}! I am ${myAge} years old in human years which is ${myAgeInDogYears} in dog years.`);
